@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Weather Data by Latitude</title>
+  <title>City Latitude vs. Windspeed 01/05/17</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="style.css">!-->
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.html">Home</a><span class="sr-only">(current)</span></li>
           <li><a href="Comparison.html">
@@ -18,6 +18,7 @@
           <li><a href="Data.htm">
             Data
           </a></li>
+
           <li> 
               <div class="dropdown">
                <button class="btn navbar-btn dropdown-toggle" type="button" id="dropdown-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,14 +32,35 @@
                 </div>
                 </div>
             </li>
-
         </ul>
-        
-        </nav>
-        <p text-left>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-          <br>
-          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at includedd temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.</p>
-        <br>
+      </nav>
+  <div class="container">
+    <div class="row">
+      <img src="Fig4.png">
+    </div>
+  </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Figure 4</h3>
+             <p>This visualization displays a lack of correlation between latitude and windspeed. Though, it is interesting to note that the higher windspeeds appear to occur in the Northern hemisphere, where it would be winter. This is likely not a pertinent observation, just something I thought was interesting.</p>
+        </div>
+      </div>
+    </div>  
+  <br>
+  <br>
+  <br>
 </body>
+  <!-- Footer -->
+<footer class="page-footer font-small blue">
 
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="mailto:maggie.ulrich@gmail.com"> Margaret Ulrich</a>, UNCC Data Analytics Bootcamp</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </html>
+    
